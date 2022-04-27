@@ -1,0 +1,32 @@
+extends typescript
+
+snippet rh
+const ${1}: React.FC = () => {
+		return <div> Filler </div>;
+}
+
+export default ${2}
+endsnippet
+
+snippet rhp
+interface ${1}Props {
+
+}
+
+const ${2}: React.FC<${3}Props> = ({${5}}) => {
+		return <div> Filler </div>;
+}
+
+export default ${4}
+endsnippet
+
+snippet nx
+import type { NextPage } from "next";
+
+const ${1}: NextPage = () => {
+	return <> Filler </>
+}
+
+export default ${2}
+endsnippet
+

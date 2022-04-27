@@ -1,0 +1,81 @@
+snippet log
+console.log(${0});
+endsnippet
+
+snippet rac
+const ${1} = (${3}) => {
+  return (
+    <>
+
+    </>
+  );
+};
+
+export default ${2};
+endsnippet
+
+snippet rfc
+export default function ${2} (${3}) {
+    return (
+        <div>
+
+        </div>
+    )
+    
+}
+endsnippet
+
+snippet C
+<${0} />
+endsnippet
+
+
+snippet af
+(${1}) => {${2}}
+endsnippet
+
+snippet (af)
+((${1}) => {${2}})
+endsnippet
+
+snippet as
+async (${1}) => {${2}}
+endsnippet
+
+snippet (as)
+(async (${1}) => {${2}})
+endsnippet
+
+
+snippet meta
+import Head from "next/head";
+
+const Meta = ({ title, keywords, desc }) => {
+  return (
+    <div>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content={keywords} />
+        <meta name="description" content={desc} />
+        <meta charSet="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <title>{title}</title>
+      </Head>
+    </div>
+  );
+};
+
+Meta.defaultProps = {
+  title: "",
+  keywords: "",
+  desc: "",
+};
+
+export default Meta;
+endsnippet
+
+snippet jdoc
+/** 
+* ${0}
+**/
+endsnippet
