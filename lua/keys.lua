@@ -38,6 +38,8 @@ map("v", "<A-j>", ":m .+1<CR>==", options)
 map("v", "<A-k>", ":m .-2<CR>==", options)
 map("v", "p", '"_dP' , options) --does not replace yank after pasting
 
+map("v", "f", ":fo<CR>", options)
+
 ----- VISUAL BLOCK MODE
 map("x", "J", ":move '>+1<CR>gv-gv", options)
 map("x", "K", ":move '<-2<CR>gv-gv", options)
