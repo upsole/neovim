@@ -110,6 +110,9 @@ return packer.startup(function(use)
   --latex
   use "lervag/vimtex"
 
+  --rst
+  use "gu-fan/riv.vim"
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
