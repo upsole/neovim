@@ -38,6 +38,7 @@ map("v", "<A-j>", ":m .+1<CR>==", options)
 map("v", "<A-k>", ":m .-2<CR>==", options)
 map("v", "p", '"_dP' , options) --does not replace yank after pasting
 
+--fold
 map("v", "f", ":fo<CR>", options)
 
 ----- VISUAL BLOCK MODE
@@ -50,6 +51,7 @@ map("x", "<A-k>", ":move '<-2<CR>gv-gv", options)
 -- PLUGINS --
 map("n", "<leader>fe", ":Format<cr>", options)
 map("n", "<leader>re", ":LspRestart<cr>", options)
+map("n", "<leader>p", ":Glow<cr>", options)
 -- vim.api.nvim_del_keymap("n", "<C-F>")
 vim.g.user_emmet_install_global = 1
 vim.g.user_emmet_leader_key="ñ"

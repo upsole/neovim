@@ -111,8 +111,11 @@ return packer.startup(function(use)
   use "lervag/vimtex"
 
   --rst
-  use "gu-fan/riv.vim"
+  -- use "gu-fan/riv.vim"
+  -- use "gu-fan/InstantRst"
+  -- use "gu-fan/rhythm.css"
 
+  use "ellisonleao/glow.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
