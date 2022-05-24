@@ -53,6 +53,16 @@ set undodir=$HOME/.vim/undodir
 
 vim.g.python3_host_prog = "$HOME/.config/nvim/nvim_env/bin/python3.10"
 
+--Persistent FOLDS
+vim.cmd [[
+ augroup AutoSaveFolds
+   autocmd!
+   autocmd BufWinLeave * silent! mkview
+   autocmd BufWinEnter * silent! loadview
+ augroup END
+]]
+
+
 --set.conceallevel = 0 -- helps for markdown `` is now visible
 --set.autoindent = true
 -- set.hidden = true
