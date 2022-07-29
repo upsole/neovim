@@ -11,7 +11,7 @@ set.writebackup = false -- blocks editing files currently opened by other editor
 
 --search opts
 set.hlsearch = true
-set.ignorecase = true
+set.ignorecase = false
 set.clipboard = "unnamedplus"
 
 --left bar opts
@@ -54,13 +54,13 @@ set undodir=$HOME/.vim/undodir
 vim.g.python3_host_prog = "$HOME/.config/nvim/nvim_env/bin/python3.10"
 
 --Persistent FOLDS
-vim.cmd [[
- augroup AutoSaveFolds
-   autocmd!
-   autocmd BufWinLeave * silent! mkview
-   autocmd BufWinEnter * silent! loadview
- augroup END
-]]
+-- vim.cmd [[
+--  augroup AutoSaveFolds
+--    autocmd!
+--    autocmd BufWinLeave * silent! mkview
+--    autocmd BufWinEnter * silent! loadview
+--  augroup END
+-- ]]
 
 
 --set.conceallevel = 0 -- helps for markdown `` is now visible
