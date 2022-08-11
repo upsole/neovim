@@ -48,7 +48,9 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim"
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use "kyazdani42/nvim-tree.lua"
-  use "chrisbra/Colorizer" -- color
+  -- use "chrisbra/Colorizer" -- color
+  use "norcalli/nvim-colorizer.lua"
+  
   use "akinsho/toggleterm.nvim" -- terminal
 
   --lsp

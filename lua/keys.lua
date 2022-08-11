@@ -56,4 +56,4 @@ map("n", "<leader>p", ":Glow<cr>", options)
 vim.g.user_emmet_install_global = 1
 vim.g.user_emmet_leader_key="ñ"
 
-map("n", "gs", ":ColorToggle<cr>", options)
+map("n", "gs", ":ColorizerToggle<cr>", options)
