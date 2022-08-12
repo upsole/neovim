@@ -48,7 +48,7 @@ set.shortmess:append "c"
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd([[
-set undodir=$HOME/.vim/undodir
+set undodir=$HOME/.local/share/nvim/undodir
 ]])
 
 vim.g.python3_host_prog = "$HOME/.config/nvim/nvim_env/bin/python3.10"
