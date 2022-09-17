@@ -51,6 +51,13 @@ vim.cmd([[
 set undodir=$HOME/.local/share/nvim/undodir
 ]])
 
+--TURN OFF DOUBLE QUOTES FOR LISP SCHEME
+vim.cmd [[
+  augroup lisp_quotes
+    autocmd FileType scheme,lisp let b:delimitMate_quotes = '"'
+  augroup end
+]]
+
 vim.g.python3_host_prog = "$HOME/.config/nvim/nvim_env/bin/python3.10"
 
 --Persistent FOLDS
