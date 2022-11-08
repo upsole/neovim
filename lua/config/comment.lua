@@ -20,5 +20,5 @@ comment.setup {
     }
   end,
   opleader = { line= "<leader>"},
-  toggler = { line='<leader>cc'}
+  toggler = { line='<leader><leader>'}
 }

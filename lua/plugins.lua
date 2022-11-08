@@ -112,6 +112,9 @@ return packer.startup(function(use)
   --latex
   use "lervag/vimtex"
 
+  --LISP
+  use "vlime/vlime" 
+
   --rst
   -- use "gu-fan/riv.vim"
   -- use "gu-fan/InstantRst"
