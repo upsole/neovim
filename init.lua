@@ -11,7 +11,9 @@ require('config.lualine')
 require('config.comment')
 require('config.ultisnips')
 require('config.nvim-tree')
-require('config.toggleterm')
 require('config.bufferline')
 require('config.vimtex')
 require('config.nvim-color')
+
+-- DEACTIVATED
+-- require('config.toggleterm')

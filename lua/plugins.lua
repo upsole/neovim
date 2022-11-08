@@ -51,7 +51,7 @@ return packer.startup(function(use)
   -- use "chrisbra/Colorizer" -- color
   use "norcalli/nvim-colorizer.lua"
   
-  use "akinsho/toggleterm.nvim" -- terminal
+  -- use "akinsho/toggleterm.nvim" -- terminal
 
   --lsp
   use "neovim/nvim-lspconfig" -- enable LSP
