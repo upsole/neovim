@@ -14,6 +14,7 @@ require('config.nvim-tree')
 require('config.bufferline')
 require('config.vimtex')
 require('config.nvim-color')
+require('config.vlime')
 
 -- DEACTIVATED
 -- require('config.toggleterm')
