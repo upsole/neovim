@@ -15,6 +15,9 @@ map("n", "<C-k>", "<C-w>k", options)
 map("n", "<C-l>", "<C-w>l", options)
 map("n", "<leader>e", ":NvimTreeToggle<cr>", options)
 
+map("n", "<leader>wA", ":bfirst<cr>|:%bd!|e#<cr>", options) -- VLIME trash all buffers fast
+map("n", "<leader>wq", ":bfirst<cr>|:w<cr>|:%bd!|e#<cr>|:wq<cr>", options)
+
 
 --RESIZE windows with arrows
 map("n", "<C-Up>", ":resize +2<CR>", options)
@@ -25,7 +28,7 @@ map("n", "<C-Right>", ":vertical resize +2<CR>", options)
 --BUFFER
 map('n', 'H', ":bp<CR>", options)
 map('n', 'L', ":bn<CR>", options)
-map('n', 'W', ":bd!<CR>", options)
+map('n', '<leader>W', ":bd!<CR>", options)
 
 ----- INSERT MODE
 ----- VISUAL MODE
