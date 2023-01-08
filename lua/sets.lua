@@ -1,4 +1,5 @@
 local set = vim.opt
+        
 --file opts
 set.backup = false
 set.swapfile = false
@@ -21,9 +22,9 @@ set.numberwidth = 2
 set.signcolumn = "yes"
 
 --indent, tabs, editor
-set.tabstop = 2
+-- set.tabstop = 8
 set.expandtab = true
-set.shiftwidth = 2
+-- set.shiftwidth = 2
 set.completeopt = { "menuone", "noselect" } -- for cmp plug
 
 --display
@@ -51,12 +52,27 @@ vim.cmd([[
 set undodir=$HOME/.local/share/nvim/undodir
 ]])
 
---TURN OFF DOUBLE QUOTES FOR LISP SCHEME
-vim.cmd [[
-  augroup lisp_quotes
-    autocmd FileType scheme,lisp let b:delimitMate_quotes = '"'
-  augroup end
+-- TURN OFF DOUBLE QUOTES FOR LISP SCHEME
+vim.cmd [[ 
+        augroup LISP
+        autocmd!
+        autocmd FileType scheme,lisp inoremap ' '
+        augroup END
 ]]
+
+vim.cmd [[ 
+        augroup LUA
+        autocmd!
+        autocmd FileType lua set shiftwidth=2
+        augroup END
+]]
+
+-- vim.cmd [[ 
+--   augroup PYTHON
+--     autocmd!
+--     autocmd FileType python set tabstop = 4
+--   augroup END
+-- ]]
 
 vim.g.python3_host_prog = "$HOME/.config/nvim/nvim_env/bin/python3.10"
 
@@ -68,8 +84,3 @@ vim.g.python3_host_prog = "$HOME/.config/nvim/nvim_env/bin/python3.10"
 --    autocmd BufWinEnter * silent! loadview
 --  augroup END
 -- ]]
-
-
---set.conceallevel = 0 -- helps for markdown `` is now visible
---set.autoindent = true
--- set.hidden = true

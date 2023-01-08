@@ -31,6 +31,10 @@ map('n', 'L', ":bn<CR>", options)
 map('n', '<leader>W', ":bd!<CR>", options)
 
 ----- INSERT MODE
+map('i', '\"', "\"\"<Esc>i", options)
+map('i', '\'', "''<Esc>i", options)
+map('i', '(', "()<Esc>i", options)
+map('i', '{', "{}<Esc>i", options)
 ----- VISUAL MODE
 -- keeps you in visual mode after indent
 map("v", "<", "<gv", options)
