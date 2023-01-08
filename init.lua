@@ -1,4 +1,5 @@
 require('sets')
+require('lang-autocmds')
 require('keys')
 require('plugins')
 require('colors')

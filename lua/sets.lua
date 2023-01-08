@@ -16,15 +16,15 @@ set.ignorecase = false
 set.clipboard = "unnamedplus"
 
 --left bar opts
-set.nu = true
+set.number = true
 set.relativenumber = true
 set.numberwidth = 2
 set.signcolumn = "yes"
 
 --indent, tabs, editor
 -- set.tabstop = 8
-set.expandtab = true
 -- set.shiftwidth = 2
+set.expandtab = true
 set.completeopt = { "menuone", "noselect" } -- for cmp plug
 
 --display
@@ -52,27 +52,6 @@ vim.cmd([[
 set undodir=$HOME/.local/share/nvim/undodir
 ]])
 
--- TURN OFF DOUBLE QUOTES FOR LISP SCHEME
-vim.cmd [[ 
-        augroup LISP
-        autocmd!
-        autocmd FileType scheme,lisp inoremap ' '
-        augroup END
-]]
-
-vim.cmd [[ 
-        augroup LUA
-        autocmd!
-        autocmd FileType lua set shiftwidth=2
-        augroup END
-]]
-
--- vim.cmd [[ 
---   augroup PYTHON
---     autocmd!
---     autocmd FileType python set tabstop = 4
---   augroup END
--- ]]
 
 vim.g.python3_host_prog = "$HOME/.config/nvim/nvim_env/bin/python3.10"
 
