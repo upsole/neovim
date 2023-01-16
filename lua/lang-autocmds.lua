@@ -13,6 +13,13 @@ vim.cmd [[
   augroup END
 ]]
 
+vim.cmd [[ 
+  augroup HTML
+  autocmd!
+  autocmd FileType html set shiftwidth=4
+  augroup END
+]]
+
 vim.cmd [[
   augroup C
     autocmd!
