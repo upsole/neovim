@@ -22,9 +22,10 @@ set.numberwidth = 2
 set.signcolumn = "yes"
 
 --indent, tabs, editor
--- set.tabstop = 8
--- set.shiftwidth = 2
-set.expandtab = true
+set.tabstop = 4
+set.shiftwidth = 4
+set.expandtab = false
+-- set.expandtab = true
 set.completeopt = { "menuone", "noselect" } -- for cmp plug
 
 --display
