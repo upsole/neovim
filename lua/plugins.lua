@@ -49,9 +49,13 @@ return packer.startup(function(use)
 
   --lsp
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  --use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+ 
   use "hrsh7th/cmp-nvim-lsp"
   use "jose-elias-alvarez/null-ls.nvim"
+  use "jay-babu/mason-null-ls.nvim"
 
   --completion
   use "hrsh7th/nvim-cmp"

@@ -61,3 +61,5 @@ vim.g.user_emmet_install_global = 1
 vim.g.user_emmet_leader_key="ñ"
 
 map("n", "<leader>sg", ":ColorizerToggle<cr>", options)
+map("n", "<leader>p", ":lua vim.lsp.buf.format()<CR>", options)
+

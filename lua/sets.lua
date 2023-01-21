@@ -6,7 +6,7 @@ set.swapfile = false
 set.encoding = "utf-8"
 set.fileencoding = 'utf-8'
 set.swapfile = false
-set.updatetime = 300 -- swap file threshold
+set.updatetime = 1000 -- swap file threshold
 set.undofile = true
 set.writebackup = false -- blocks editing files currently opened by other editors
 
@@ -31,8 +31,6 @@ set.number = true
 set.relativenumber = true
 set.numberwidth = 2
 set.signcolumn = "yes"
-
-
 
 --splits
 set.splitbelow = true           -- force all horizontal splits to go below current window
@@ -59,3 +57,13 @@ vim.g.python3_host_prog = "$HOME/.config/nvim/nvim_env/bin/python3.10"
 --    autocmd BufWinEnter * silent! loadview
 --  augroup END
 -- ]]
+local colorscheme = "hybrid"
+
+--pcall is a try/catch kind of flow
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+if not status_ok then
+  vim.notify("colorscheme " .. colorscheme .. " not found!")
+  return
+end
+
+require("lang-autocmds")

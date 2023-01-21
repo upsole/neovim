@@ -3,6 +3,14 @@ if not status_ok then
 	return
 end
 
-require("lsp.lsp-installer")
-require("lsp.handlers").setup()
-require("lsp.null-ls")
+require("mason").setup()
+require("mason-lspconfig").setup()
+require("mason-null-ls").setup({
+    automatic_setup = true,
+})
+require("null-ls").setup()
+require 'mason-null-ls'.setup_handlers()
+
+--require("lsp.null-ls")
+require"lspconfig".clangd.setup{}
+require"lspconfig".pyright.setup{}

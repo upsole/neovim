@@ -1,26 +1,20 @@
 require('sets')
-require('lang-autocmds')
 require('keys')
 require('plugins')
-require('colors')
 
+--LSP + Syntax [LSP, Mason, NullLS, TreeSitter, UltiSnips]
 require('lsp')
 require('config.treesitter')
-require('config.telescope')
-require('config.lualine')
 require('config.ultisnips')
 
+--Navigation [Telescope, NvimTree, Bufferline+Lualine] 
+require('config.telescope')
 require('config.nvim-tree')
+require('config.lualine')
 require('config.bufferline')
---color tags
-require('config.nvim-color')
+
+--extras // 
 require('config.toggleterm')
-
---lisp
 require('config.vlime')
---latex
 require('config.vimtex')
-
--- DEACTIVATED
--- require('config.cmp')
--- require('config.comment')
+require('config.nvim-color')
