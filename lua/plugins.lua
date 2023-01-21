@@ -1,5 +1,4 @@
 local fn = vim.fn
-
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -44,13 +43,8 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  -- use "Raimondi/delimitMate"
-  use "numToStr/Comment.nvim"
-  use "JoosepAlviste/nvim-ts-context-commentstring"
   use "kyazdani42/nvim-tree.lua"
-  -- use "chrisbra/Colorizer" -- color
   use "norcalli/nvim-colorizer.lua"
-  
   use "akinsho/toggleterm.nvim" -- terminal
 
   --lsp
@@ -64,12 +58,9 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "mattn/emmet-vim" -- emmet is useful for tsx
 
   --snips
-  use "rafamadriz/friendly-snippets"
-  use "L3MON4D3/LuaSnip"
   use 'SirVer/ultisnips'
 
   --treesitter
@@ -79,10 +70,6 @@ return packer.startup(function(use)
   --telescope
   use "nvim-telescope/telescope.nvim"
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  -- use "nvim-telescope/telescope-ui-select.nvim"
-
-  --markdown
-  use "iamcco/markdown-preview.nvim"
 
   --theme
   use "sainnhe/gruvbox-material"
@@ -113,13 +100,6 @@ return packer.startup(function(use)
 
   --LISP
   use "vlime/vlime" 
-
-  --rst
-  -- use "gu-fan/riv.vim"
-  -- use "gu-fan/InstantRst"
-  -- use "gu-fan/rhythm.css"
-
-  use "ellisonleao/glow.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

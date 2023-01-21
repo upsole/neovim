@@ -1,4 +1,4 @@
-vim.g.UltiSnipsExpandTrigger='Ñ'
+vim.g.UltiSnipsExpandTrigger=','
 vim.g.UltiSnipsJumpForwardTrigger='<c-k>'
 vim.g.UltiSnipsJumpBackwardTrigger='<c-j>'
 

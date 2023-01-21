@@ -5,17 +5,22 @@ require('plugins')
 require('colors')
 
 require('lsp')
-require('config.cmp')
 require('config.treesitter')
 require('config.telescope')
 require('config.lualine')
-require('config.comment')
 require('config.ultisnips')
+
 require('config.nvim-tree')
 require('config.bufferline')
-require('config.vimtex')
+--color tags
 require('config.nvim-color')
-require('config.vlime')
 require('config.toggleterm')
 
+--lisp
+require('config.vlime')
+--latex
+require('config.vimtex')
+
 -- DEACTIVATED
+-- require('config.cmp')
+-- require('config.comment')

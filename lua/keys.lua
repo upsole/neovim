@@ -18,21 +18,20 @@ map("n", "<leader>e", ":NvimTreeToggle<cr>", options)
 map("n", "<leader>wA", ":bfirst<cr>|:%bd!|e#<cr>", options) -- VLIME trash all buffers fast
 map("n", "<leader>wq", ":bfirst<cr>|:w<cr>|:%bd!|e#<cr>|:wq<cr>", options)
 
-
 --RESIZE windows with arrows
 map("n", "<C-Up>", ":resize +2<CR>", options)
 map("n", "<C-Down>", ":resize -2<CR>", options)
 map("n", "<C-Left>", ":vertical resize -2<CR>", options)
 map("n", "<C-Right>", ":vertical resize +2<CR>", options)
+map("n", "<C-o>", "<C-w>q", options)
 
 --BUFFER
 map('n', 'H', ":bp<CR>", options)
 map('n', 'L', ":bn<CR>", options)
-map('n', '<leader>W', ":bd!<CR>", options)
+map('n', '<C-q>', ":bd!<CR>", options)
 
 ----- INSERT MODE
 map('i', '\"', "\"\"<Esc>i", options)
--- map('i', '\'', "''<Esc>i", options)
 map('i', '(', "()<Esc>i", options)
 map('i', '{', "{}<Esc>i", options)
 ----- VISUAL MODE
@@ -54,13 +53,11 @@ map("x", "K", ":move '<-2<CR>gv-gv", options)
 map("x", "<A-j>", ":move '>+1<CR>gv-gv", options)
 map("x", "<A-k>", ":move '<-2<CR>gv-gv", options)
 
-
 -- PLUGINS --
 map("n", "<leader>fe", ":Format<cr>", options)
 map("n", "<leader>re", ":LspRestart<cr>", options)
-map("n", "<leader>p", ":Glow<cr>", options)
 -- vim.api.nvim_del_keymap("n", "<C-F>")
 vim.g.user_emmet_install_global = 1
 vim.g.user_emmet_leader_key="ñ"
 
-map("n", "gs", ":ColorizerToggle<cr>", options)
+map("n", "<leader>sg", ":ColorizerToggle<cr>", options)

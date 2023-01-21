@@ -1,6 +1,6 @@
 local set = vim.opt
-        
---file opts
+--File opts
+set.clipboard = "unnamedplus"
 set.backup = false
 set.swapfile = false
 set.encoding = "utf-8"
@@ -10,25 +10,7 @@ set.updatetime = 300 -- swap file threshold
 set.undofile = true
 set.writebackup = false -- blocks editing files currently opened by other editors
 
---search opts
-set.hlsearch = true
-set.ignorecase = false
-set.clipboard = "unnamedplus"
-
---left bar opts
-set.number = true
-set.relativenumber = true
-set.numberwidth = 2
-set.signcolumn = "yes"
-
---indent, tabs, editor
-set.tabstop = 4
-set.shiftwidth = 4
-set.expandtab = false
--- set.expandtab = true
-set.completeopt = { "menuone", "noselect" } -- for cmp plug
-
---display
+--Display
 set.cursorline = true
 set.wrap = false
 set.termguicolors = true
@@ -36,8 +18,21 @@ set.scrolloff = 8
 set.incsearch = true
 set.colorcolumn = "80"
 set.cmdheight = 1
---set.sidescrolloff = 8
---set.guifont = "mono xyz"
+set.hlsearch = true
+
+--Real Tabs
+set.autoindent = true
+set.tabstop = 4
+set.shiftwidth = 4
+set.expandtab = false
+
+--left bar opts
+set.number = true
+set.relativenumber = true
+set.numberwidth = 2
+set.signcolumn = "yes"
+
+
 
 --splits
 set.splitbelow = true           -- force all horizontal splits to go below current window
