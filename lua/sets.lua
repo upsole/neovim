@@ -4,6 +4,7 @@ set.clipboard = "unnamedplus"
 set.backup = false
 set.swapfile = false
 set.encoding = "utf-8"
+--set.undodir="~/.local/share/nvim/undodir"
 set.fileencoding = 'utf-8'
 set.swapfile = false
 set.updatetime = 1000 -- swap file threshold
@@ -20,7 +21,7 @@ set.colorcolumn = "80"
 set.cmdheight = 1
 set.hlsearch = true
 
---Real Tabs
+--Real Tabulation
 set.autoindent = true
 set.tabstop = 4
 set.shiftwidth = 4
@@ -32,35 +33,16 @@ set.relativenumber = true
 set.numberwidth = 2
 set.signcolumn = "yes"
 
---splits
+-- Window
 set.splitbelow = true           -- force all horizontal splits to go below current window
 set.splitright = true  			    -- force all vertical to go right
 
-set.completeopt = {"menuone", "noselect"}
-
-set.errorbells = false
 set.shortmess:append "c"
-
-vim.cmd "set whichwrap+=<,>,[,],h,l"
-vim.cmd [[set iskeyword+=-]]
-vim.cmd([[
-set undodir=$HOME/.local/share/nvim/undodir
-]])
-
 
 vim.g.python3_host_prog = "$HOME/.config/nvim/nvim_env/bin/python3.10"
 
---Persistent FOLDS
--- vim.cmd [[
---  augroup AutoSaveFolds
---    autocmd!
---    autocmd BufWinLeave * silent! mkview
---    autocmd BufWinEnter * silent! loadview
---  augroup END
--- ]]
+-- COLOR THEME
 local colorscheme = "hybrid"
-
---pcall is a try/catch kind of flow
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
   vim.notify("colorscheme " .. colorscheme .. " not found!")

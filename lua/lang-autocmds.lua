@@ -1,11 +1,3 @@
--- TURN OFF DOUBLE QUOTES FOR LISP SCHEME
--- vim.cmd [[ 
---         augroup LISP
---         autocmd!
---         autocmd FileType scheme,lisp inoremap ' '
---         augroup END
--- ]]
-
 vim.cmd [[ 
   augroup LUA
   autocmd!

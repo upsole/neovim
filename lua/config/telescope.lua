@@ -16,7 +16,6 @@ local map = vim.api.nvim_set_keymap
 map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", {noremap = true})
 map("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", {noremap = true})
 map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", {noremap = true})
---map("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", {noremap = true})
 map("n", "<leader>nv", "<cmd>lua require\'config.telescope\'.search_dotfiles()<CR>", {noremap = true, silent = true})
 
 local M = {}

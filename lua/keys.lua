@@ -3,11 +3,10 @@ local options = { noremap = true, silent = true }
 local map = vim.api.nvim_set_keymap
 
 map("", "<Space>", "<Nop>", options)
-map("", "<C-w>", "<Nop>", options)
+map("", "<C-w>", "<Nop>", options) -- will be remapped to close buffer
 map("", "<C-d>", "<Nop>", options) -- lsp "leader"
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
 
 ----- NORMAL MODE
 --WINDOW NAV
@@ -15,10 +14,10 @@ map("n", "<C-h>", "<C-w>h", options)
 map("n", "<C-j>", "<C-w>j", options)
 map("n", "<C-k>", "<C-w>k", options)
 map("n", "<C-l>", "<C-w>l", options)
-map("n", "<leader>e", ":NvimTreeToggle<cr>", options)
+map("n", "<leader>e", ":NvimTreeToggle<cr>", options) -- FileExplorer
 
-map("n", "<leader>wA", ":bfirst<cr>|:%bd!|e#<cr>", options) -- VLIME trash all buffers fast
-map("n", "<leader>wq", ":bfirst<cr>|:w<cr>|:%bd!|e#<cr>|:wq<cr>", options)
+--map("n", "<leader>wA", ":bfirst<cr>|:%bd!|e#<cr>", options) -- VLIME trash all buffers fast
+--map("n", "<leader>wq", ":bfirst<cr>|:w<cr>|:%bd!|e#<cr>|:wq<cr>", options)
 
 --RESIZE windows with arrows
 map("n", "<C-Up>", ":resize +2<CR>", options)
