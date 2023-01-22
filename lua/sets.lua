@@ -36,6 +36,7 @@ set.signcolumn = "yes"
 set.splitbelow = true           -- force all horizontal splits to go below current window
 set.splitright = true  			    -- force all vertical to go right
 
+set.completeopt = {"menuone", "noselect"}
 
 set.errorbells = false
 set.shortmess:append "c"

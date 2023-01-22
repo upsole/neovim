@@ -62,6 +62,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "L3MON4D3/LuaSnip"
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "mattn/emmet-vim" -- emmet is useful for tsx
 
   --snips
@@ -69,7 +71,6 @@ return packer.startup(function(use)
 
   --treesitter
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
-  use "p00f/nvim-ts-rainbow"
 
   --telescope
   use "nvim-telescope/telescope.nvim"

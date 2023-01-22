@@ -5,6 +5,7 @@ require('plugins')
 --LSP + Syntax [LSP, Mason, NullLS, TreeSitter, UltiSnips]
 require('lsp')
 require('config.treesitter')
+require('config.cmp')
 require('config.ultisnips')
 
 --Navigation [Telescope, NvimTree, Bufferline+Lualine] 

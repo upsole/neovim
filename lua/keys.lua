@@ -3,6 +3,8 @@ local options = { noremap = true, silent = true }
 local map = vim.api.nvim_set_keymap
 
 map("", "<Space>", "<Nop>", options)
+map("", "<C-w>", "<Nop>", options)
+map("", "<C-d>", "<Nop>", options) -- lsp "leader"
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -28,7 +30,7 @@ map("n", "<C-o>", "<C-w>q", options)
 --BUFFER
 map('n', 'H', ":bp<CR>", options)
 map('n', 'L', ":bn<CR>", options)
-map('n', '<C-q>', ":bd!<CR>", options)
+map('n', '<C-w>', ":bd!<CR>", options)
 
 ----- INSERT MODE
 map('i', '\"', "\"\"<Esc>i", options)

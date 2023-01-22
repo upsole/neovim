@@ -9,7 +9,7 @@
 vim.cmd [[ 
   augroup LUA
   autocmd!
-  autocmd FileType lua set shiftwidth=2
+  autocmd FileType lua set shiftwidth=4
   augroup END
 ]]
 
