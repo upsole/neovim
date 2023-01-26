@@ -1,6 +1,7 @@
+require('plugins')
 require('sets')
 require('keys')
-require('plugins')
+
 
 --LSP + Syntax [LSP, Mason, NullLS, TreeSitter, UltiSnips]
 require('lsp')
