@@ -36,6 +36,7 @@ set.signcolumn = "yes"
 -- Window
 set.splitbelow = true           -- force all horizontal splits to go below current window
 set.splitright = true  			    -- force all vertical to go right
+set.pumheight = 8 -- autocompletion tab max items
 
 set.shortmess:append "c"
 

@@ -13,5 +13,7 @@ lspconfig.clangd.setup {}
 lspconfig.pyright.setup {}
 lspconfig.jdtls.setup {}
 lspconfig.sumneko_lua.setup {}
+lspconfig.html.setup {}
+lspconfig.cssls.setup {}
 
 require("lsp.keys")

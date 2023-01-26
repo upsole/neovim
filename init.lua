@@ -19,3 +19,4 @@ require('config.toggleterm')
 require('config.vlime')
 require('config.vimtex')
 require('config.nvim-color')
+
