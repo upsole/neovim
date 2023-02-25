@@ -1,4 +1,4 @@
-# how 2 escape sog w neovim.. Targeted INdivual Build
+# My neovim files
 ```
     ~~ all the neovim files are installed in 
 	     .local/share/nvim. delete to actually uninstall it
@@ -6,7 +6,7 @@
 ```
 
 1. yay -S neovim-git (works on 0.9x versions)
-2. move this dir to .config/ and launch nvim (WOOSH ☆). Packer will begin installing all 
+2. move this dir to .config/ and launch nvim. Packer will begin installing all 
 the plugins  	
 3. Manual Installs:
 	fd and rg for Telescope (find more info through :checkhealth telescope)
@@ -20,6 +20,7 @@ the plugins
 			or leader+ 
 			
 	~ Saner defaults for windowsplits & buffers
+    ~ snippets (easy syntax to customize)
 	~ Telescope is great, helps you jump through files (Bindings on lua/keys.lua)
 	~ Mason for LSPs and formatters ! 
 	~ TSInstall ~languagename for syntax hightlighting
